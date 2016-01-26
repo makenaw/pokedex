@@ -36,5 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>pokemon.ttf</string>
+	</array>
 </dict>
 </plist>
