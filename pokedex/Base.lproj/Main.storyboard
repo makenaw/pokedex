@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-xC-1m2">
-                                <rect key="frame" x="0.0" y="55" width="600" height="545"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-xC-1m2">
+                                <rect key="frame" x="0.0" y="99" width="600" height="501"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-yC-ZDe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
@@ -28,11 +28,11 @@
                                     <constraint firstAttribute="height" constant="55" id="mrN-xu-Bnc"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CfV-x2-LYA">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CfV-x2-LYA">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V9K-kb-x3q">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V9K-kb-x3q">
                                 <rect key="frame" x="20" y="119" width="560" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h5A-RF-PYD">
@@ -42,7 +42,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V1s-Se-GOu">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V1s-Se-GOu" customClass="pokeCell" customModule="pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -72,6 +72,10 @@
                                             <constraint firstItem="O7f-Jf-0nB" firstAttribute="leading" secondItem="V1s-Se-GOu" secondAttribute="leading" id="qyA-82-1tA"/>
                                             <constraint firstAttribute="bottom" secondItem="O7f-Jf-0nB" secondAttribute="bottom" id="zbg-yJ-iMs"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="O7f-Jf-0nB" id="RXF-ux-k0q"/>
+                                            <outlet property="thumbImg" destination="0Yc-LO-bz6" id="vK1-WZ-4dc"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -92,7 +96,13 @@
                             <constraint firstItem="Z5h-yC-ZDe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tjp-k7-241"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V9K-kb-x3q" secondAttribute="bottom" constant="20" id="wnk-5Q-h6n"/>
                             <constraint firstItem="CfV-x2-LYA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zXe-Ih-JHn"/>
+                            <constraint firstItem="IJU-xC-1m2" firstAttribute="top" secondItem="CfV-x2-LYA" secondAttribute="bottom" id="zy1-Pn-DmA"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gdu-Ix-Tag"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
