@@ -18,7 +18,7 @@
 		F684C6FF1C574D7A004BB5CB /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684C6FE1C574D7A004BB5CB /* csv.swift */; };
 		F684C7041C575412004BB5CB /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F684C7031C575412004BB5CB /* pokemon.ttf */; };
 		F684C7061C575932004BB5CB /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F684C7051C575932004BB5CB /* music.mp3 */; };
-		F684C7081C5762CB004BB5CB /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684C7071C5762CB004BB5CB /* PokemonDetailVC.swift */; };
+		F684C70A1C5794F9004BB5CB /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684C7091C5794F9004BB5CB /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		F684C6FE1C574D7A004BB5CB /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		F684C7031C575412004BB5CB /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		F684C7051C575932004BB5CB /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
-		F684C7071C5762CB004BB5CB /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
+		F684C7091C5794F9004BB5CB /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F684C6E61C57377A004BB5CB /* ViewController.swift */,
-				F684C7071C5762CB004BB5CB /* PokemonDetailVC.swift */,
+				F684C7091C5794F9004BB5CB /* PokemonDetailVC.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 				F684C6FD1C5744C0004BB5CB /* pokeCell.swift in Sources */,
 				F684C6FA1C573B61004BB5CB /* pokemon.swift in Sources */,
 				F684C6E71C57377A004BB5CB /* ViewController.swift in Sources */,
-				F684C7081C5762CB004BB5CB /* PokemonDetailVC.swift in Sources */,
+				F684C70A1C5794F9004BB5CB /* PokemonDetailVC.swift in Sources */,
 				F684C6E51C57377A004BB5CB /* AppDelegate.swift in Sources */,
 				F684C6FF1C574D7A004BB5CB /* csv.swift in Sources */,
 			);

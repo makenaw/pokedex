@@ -38,15 +38,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             musicPlayer.prepareToPlay()
             musicPlayer.numberOfLoops = -1
             musicPlayer.play()
-            
         } catch let err as NSError {
             print(err.debugDescription)
             
         }
-        
     }
-    
-    
     
     func parsePokemonCSV() {
         let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")!
@@ -64,7 +60,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -72,18 +67,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             cell.configureCell(self.pokemon[indexPath.row])
             
-            
-            let poke: Pokemon!
-            
-            if inSearchMode {
-                poke = filteredPokemon[indexPath.row]
-            } else {
-                poke = pokemon[indexPath.row]
-            }
-            
-            cell.configureCell(poke)
             return cell
-            
         } else {
             return UICollectionViewCell()
         }
@@ -91,19 +75,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        let poke: Pokemon!
+        var poke: Pokemon!
         
         if inSearchMode {
             poke = filteredPokemon[indexPath.row]
-            
         } else {
             poke = pokemon[indexPath.row]
         }
-        
         print(poke.name)
         
         self.performSegueWithIdentifier("PokemonDetailVC", sender: poke)
-        
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -157,6 +138,5 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             }
         }
     }
-
 }
 
