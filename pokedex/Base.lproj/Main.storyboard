@@ -217,7 +217,7 @@
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
                                                 <string key="text">kdfj dklfjakldjf kdfjalkjd lk;djflk fl;kdj dlkfjal;ksjdflkdjtd fkfjwith the raklfdjsd thihf . kltheitje kljt. when thte kthin is in the oild the basket weavers cry and the all lthe agrasses are wet with dew.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>

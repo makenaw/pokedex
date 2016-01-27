@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D662A6DF107B2995FC45DD5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672F82762E3BF95FE1003C8 /* Pods.framework */; };
+		F63EE7031C58E31700BDC367 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63EE7021C58E31700BDC367 /* constants.swift */; };
 		F684C6E51C57377A004BB5CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684C6E41C57377A004BB5CB /* AppDelegate.swift */; };
 		F684C6E71C57377A004BB5CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684C6E61C57377A004BB5CB /* ViewController.swift */; };
 		F684C6EA1C57377A004BB5CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F684C6E81C57377A004BB5CB /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		5005BA4CFA6061E27E5E27DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6672F82762E3BF95FE1003C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F633B954B514930E019AC5D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F63EE7021C58E31700BDC367 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		F684C6E11C57377A004BB5CB /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F684C6E41C57377A004BB5CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F684C6E61C57377A004BB5CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F684C6FE1C574D7A004BB5CB /* csv.swift */,
+				F63EE7021C58E31700BDC367 /* constants.swift */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				F684C6FD1C5744C0004BB5CB /* pokeCell.swift in Sources */,
 				F684C6FA1C573B61004BB5CB /* pokemon.swift in Sources */,
 				F684C6E71C57377A004BB5CB /* ViewController.swift in Sources */,
+				F63EE7031C58E31700BDC367 /* constants.swift in Sources */,
 				F684C70A1C5794F9004BB5CB /* PokemonDetailVC.swift in Sources */,
 				F684C6E51C57377A004BB5CB /* AppDelegate.swift in Sources */,
 				F684C6FF1C574D7A004BB5CB /* csv.swift in Sources */,
