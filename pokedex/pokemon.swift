@@ -80,7 +80,29 @@ class Pokemon {
                 } else {
                     self._type = ""
                 }
+                
                 print(self._type)
+                
+                if let descArr = dict["descriptions"] as? [Dictionary<String, String>] where descArr.count > 0 {
+                    
+                    if let url = descArr[0]["resource_uri"] {
+                        let nsurl = NSURL(string: "\(URL_BASE)\(url)")!
+                        
+                        Alamofire.request(.GET, nsurl).responseJSON { response in
+                            
+                            let desResult = response.result
+                            if let desDict = desResult.value as? Dictionary<String, AnyObject> {
+                                
+                                if let description = desDict["description"] as? String {
+                                    self._description = description
+                                    print(self._description)
+                                }
+                            }
+                            
+                            completed()
+                        }
+                    }
+                }
             }
 
         }
